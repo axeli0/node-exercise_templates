@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	${head}
+</head>
+<body>
+	<h1>List of CEO's</h1>
+	<ul>
+		${ceoList.map(ceo => `<li><a href="${path}/${ceo.slug}">${ceo.name}</a></li>
+		`).join('')}
+	</ul>
+</body>
+</html>
