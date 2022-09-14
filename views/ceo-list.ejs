@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CEO Details</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<h1>List of CEO's</h1>
+	<ul>
+		<% ceoList.forEach((ceo)=>{ %>
+			<li><a href="<%=path%>/<%=ceo.slug%>"><%=ceo.name%></a></li>
+		<%})%>
+	</ul>
+</body>
+</html>
